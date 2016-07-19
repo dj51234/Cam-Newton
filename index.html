@@ -1,13 +1,62 @@
 ---
-layout: default
-title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+    </head>
+    <body>
+      <div id="hero">
+        <nav>
+          <a href="#">About Cam</a>
+          <a href="#">Highlights</a>
+          <a href="#">Headlines</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="heading-text">
+          <h1>Cam<br>Newton</h1>
+          <h3>Carolina Panthers</h3>
+        </div>
+      </div>
+      <div id="about">
+        <div class="cam-image"><img src="assets/img/cam-image.png" alt=""></div>
+        <div class="about-text">
+          <div class="about-blurb">
+            <h3>About Cam</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum optio sint est praesentium ut, omnis et voluptate earum cupiditate nostrum ab quisquam totam nesciunt ipsum ratione. Quasi, enim deleniti!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum optio sint est praesentium ut, omnis et voluptate earum cupiditate nostrum ab quisquam totam nesciunt ipsum ratione. Quasi, enim deleniti!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum optio sint est praesentium ut, omnis et voluptate earum cupiditate nostrum ab quisquam totam nesciunt ipsum ratione. Quasi, enim deleniti!</p>
+          </div>
+          <div class="about-icons">
+            <div class="icon">
+              <div class="icon-1">{% include icons/rushing.html %}</div>
+              <h3>Rushing TDs</h3>
+              <h1><em>45</em></h1>
+            </div>
+            <div class="icon icon2">
+              <div class="icon-2">{% include icons/passing.html %}</div>
+              <h3>Passing TDs</h3>
+              <h1><em>45</em></h1>
+            </div>
+            <div class="icon icon3">
+              <div class="icon-3">{% include icons/total.html %}</div>
+              <h3>Total Yards</h3>
+              <h1><em>12,057</em></h1>
+            </div>
+          </div>
+          <div class="about-skills">
+            <div class="skill"></div>
+          </div>
+        </div>
+      </div>
+
+    <script src="assets/js/jquery-3.1.0.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+    </body>
+</html>

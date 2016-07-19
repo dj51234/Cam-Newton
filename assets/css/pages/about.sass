@@ -1,0 +1,43 @@
+#about
+  padding: 75px 20px
+  height: 1000px
+  display: flex
+  font-family: $raleway
+
+  > div
+    padding: 0 20px
+
+  h3
+    color: $heading-text
+
+  p
+    line-height: 28px
+    color: $main-text
+
+  .about-icons
+
+    display: flex
+    max-width: 85%
+    align-items: center
+    justify-content: space-between
+    padding: 30px 0
+
+    .icon
+      text-align: center
+
+      h1
+        font-weight: 500
+        color: #333
+
+    div[class^="icon-"]
+      +size(67px)
+      background-color: $blue
+      border-radius: 50%
+      border: 2px #222 solid
+      margin: 0 auto
+
+      path
+        fill: #ffffff
+
+    h3
+      font-weight: 300
