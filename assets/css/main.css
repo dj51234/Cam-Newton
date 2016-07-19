@@ -378,7 +378,7 @@ nav {
       color: #0074a4; }
 
 #hero {
-  background: url(/assets/img/cam-bg.png) no-repeat bottom center;
+  background: url(../img/cam-bg.png) no-repeat bottom center;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
